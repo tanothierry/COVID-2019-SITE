@@ -1,0 +1,531 @@
+:root
+{
+   --primary: #fdb62f;
+   --second: #3f898b;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*__________ GENERAL __________*/
+
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+button:focus
+{
+    outline: none;
+}
+
+/*__________ NAV BAR __________*/
+
+.topNav
+{
+    width: 100%;
+    height: 6rem;
+    background-color: var(--primary);
+    position: fixed;
+    z-index: 9;
+}
+
+.navLogo img
+{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.togNav
+{
+    background-color: black;
+}
+
+.titleNav
+{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.titleNav:hover
+{
+    color: white;
+}
+
+.titleNav span
+{
+    color: green;
+}
+
+.navLinks a
+{
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.navLinks li:hover a
+{
+    background-color: var(--second);
+    color: white;
+}
+
+.num
+{
+    margin-left: 2rem;
+}
+
+.num h2
+{
+    font-weight: bold;
+    color: white;
+}
+
+.num img
+{
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 .5rem;
+}
+
+/*__________ BAS NAVBAR __________*/
+
+.site
+{
+    min-height: 7rem;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 8;
+    margin-top: 6rem;
+}
+
+.titleSite h3
+{
+    padding: 2.5rem 0;
+    color: #da343a;
+}
+
+.titleSite img
+{
+    width: 5rem;
+    height: 5rem;
+    padding-top: 1rem;
+}
+
+/*__________ HEADER __________*/
+
+.header
+{
+    min-height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.3)) , url(../img/head.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20rem 0 3rem;
+
+}
+
+.headerContent h1
+{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.casHeader h2
+{
+    font-size: 2.7rem;
+    color: white;
+}
+
+.casHeader span
+{
+    color: var(--primary);
+}
+
+.cas
+{
+    margin-left: 1.5rem;
+}
+
+.cas p
+{
+    font-size: 6.5rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.btnHeader button
+{
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    background-color: var(--second);
+    color: white;
+    border: none;
+}
+
+/*__________ SECTION 1 DEF __________*/
+
+.covid
+{
+    min-height: 10rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.defCovid
+{
+    padding: 1rem 10rem;
+}
+
+.defCovid h1
+{
+    font-size: 3.4rem;
+    color: var(--second);
+    font-weight: bold;
+}
+
+.trait
+{
+    width: 15rem;
+    height: .5rem;
+    background-color: #da343a;
+}
+
+.textCovid p
+{
+    font-size: 1.6rem;
+}
+
+/*__________ SECTION 2 SYMP __________*/
+
+.symp
+{
+    min-height: 10rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.detailSymp
+{
+    padding: 1rem 10rem;
+}
+
+.detailSymp h1
+{
+    font-size: 3.4rem;
+    color: var(--second);
+    font-weight: bold;
+}
+
+.iconSymp
+{
+    height: 15rem;
+    width: 100%;
+}
+
+.iconSymp img
+{
+    height: 15rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.otherSymp p
+{
+    font-size: 2.3rem;
+}
+
+.otherSymp h3
+{
+    font-size: 2.7rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.otherSymp .text p
+{
+    font-size: 1.6rem;
+}
+
+/*__________ SECTION 3 PROPAG __________*/
+
+.propag
+{
+    min-height: 10rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.detailPropag
+{
+    padding: 1rem 10rem;
+}
+
+.detailPropag h1
+{
+    font-size: 3.4rem;
+    color: var(--second);
+    font-weight: bold;
+}
+
+.iconPropag
+{
+    height: 15rem;
+    width: 100%;
+}
+
+.iconPropag img
+{
+    height: 15rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.textPropag p
+{
+    font-size: 1.6rem;
+}
+
+/*__________ SECTION 4 PREV __________*/
+
+.prev
+{
+    min-height: 10rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.detailPrev
+{
+    padding: 1rem 10rem;
+}
+
+.detailPrev h1
+{
+    font-size: 3.4rem;
+    color: var(--second);
+    font-weight: bold;
+}
+
+.textPrev ul
+{
+    margin-left: 2rem;
+}
+
+.textPrev ul li
+{
+    font-size: 1.6rem;
+}
+
+.textPrev ul li span
+{
+    font-weight: bold;
+}
+
+/*__________ SECTION 5 CALL __________*/
+
+.call
+{
+    min-height: 20rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)) , url(../img/head.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0;
+    background-attachment: fixed;
+}
+
+.titleCall h1
+{
+    font-size: 3.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+.btnCall
+{
+    padding: 1rem 2rem;
+    background-color: var(--second);
+    width: 18rem;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0, 0.3);
+}
+
+.btnCall img
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.btnCall p
+{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.textCall p
+{
+    font-size: 2rem;
+    color: white;
+}
+
+.textCall span
+{
+    font-weight: bold;
+}
+
+/*__________ SECTION 6 MESURES __________*/
+
+.mesure
+{
+    min-height: 10rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.mesureContent
+{
+    padding: 1rem 10rem;
+}
+
+.mesureContent h1
+{
+    font-size: 3.4rem;
+    color: var(--second);
+    font-weight: bold;
+}
+
+.titleColappse
+{
+    background-color: var(--primary);
+}
+
+.titleColappse a
+{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.mesureContent .content
+{
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+}
+
+/*__________ FOOTER __________*/
+
+.footer
+{
+    min-height: 35rem;
+    width: 100%;
+    background-color: var(--second);
+    padding: 3rem 0;
+}
+
+.footerContent
+{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #222120;
+}
+
+.titleFooter img
+{
+    height: 7rem;
+    width: 7rem;
+}
+
+.titleFooter h2
+{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.titleFooter span
+{
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-weight: bolder;
+}
+
+.illustrationFooter p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.footerDetail h1
+{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.footerDetail a
+{
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.footerDetail a:hover
+{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.footerDetail__icon p
+{
+    color:white;
+    font-size: 1.4rem;
+}
+
+.socialNetwork
+{
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.socialNetwork p
+{
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+}
+
+.socialNetwork img
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+
+.copyright
+{
+    margin-top: 1rem;
+}
+
+.copyright p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}

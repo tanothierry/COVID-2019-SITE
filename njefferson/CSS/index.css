@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: grey;
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #f7ae11;
+	position: fixed;
+	border-bottom: 2px solid white;
+	z-index: 999;
+}
+
+nav .title {
+	float: left;
+}
+nav .title .title-link {
+	color: #000;
+	padding: 0 30px; 
+	text-decoration: none;
+	text-transform: uppercase; 
+	font-weight: bold;
+}
+nav div {
+	text-align: center;
+}
+
+nav .menu a {
+	text-decoration: none;
+	padding: 16.5px 20px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+nav .menu a:hover {
+	padding: 16.5px 20px;
+	background: #fff;
+	color: #f7ae11;
+	transition: all 0.3s ease-in;
+}
+
+.orange-divider
+{
+    width:100px;
+    height: 4px;
+    background: #f7ae11;
+    margin: 0 auto;
+}
+
+
+/************** SECTION MAIN *************/
+#about {
+	padding: 150px 0 80px 0;
+	width: 100%;
+	height: 600px;
+	background: linear-gradient(to right, #21dc2e, #8ce792);
+}
+
+#about .content {
+	text-align: center;
+	font-size: 30px;
+}
+#about .content h1 {
+	color: #fff;
+	text-shadow: 10px 10px 20px #ddd;
+}
+#about > p {
+	text-transform: uppercase;
+	font-weight: bold;
+	float: right;
+	padding: 150px 200px;
+}
+#about .link {
+	padding: 20px 200px;
+}
+#about .link a{
+	text-decoration: none;
+}
+#about .link button {
+	display: block;
+	color: #21dc2e;
+	font-size: 16px;
+	font-weight: bold;
+	background: #fff;
+	padding: 20px 80px;
+	margin: 10px 0;
+	border: none;
+	cursor: pointer;
+}
+#about .link button:hover {
+	background: #f7ae11;
+	color: #fff;
+	transition: all 0.3s ease-in;
+}
+
+/*********** SECTION PANDEMIE ***********/
+#pandemie {
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+
+#pandemie .content .answers h3 {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+#pandemie .content .answers {
+	background: linear-gradient(to right, red, white);
+	padding: 25px 80px;
+	height: 180px;
+	width: 60%;
+	margin: 40px 80px;
+	position: absolute;
+	color: #000;
+	font-size: 20px;
+}
+
+#pandemie .content-2 {
+	padding: 250px 150px 50px 150px;
+}
+
+#pandemie .content-2 .heading {
+	margin: 70px 0;
+}
+#pandemie .content-2 div p {
+	line-height: 25px;
+	margin: 15px 0;
+}
+
+#pandemie .content-2 div h2 {
+	color: #f7ae11;
+	font-family: Century Gothic, Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding: 5px 0;
+}
+
+#pandemie .content-2 img {
+	height: 200px;
+	width: 300px;
+	margin: 15px 20px;
+}
+
+/*********** SECTION REGLES ET CONSIGNES ************/
+#regle {
+	width: 100%;
+	height: auto;
+	background: #90fc81;
+}
+
+#regle .content .sous-content {
+	padding: 20px 150px 50px 150px;
+}
+#regle .content .sous-content .heading {
+	margin: 50px 0 10px 0;
+}
+#regle .content .sous-content h2 {
+	color: #fff;
+	font-family: Century Gothic, Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding: 5px 0;
+}
+
+#regle .content .symptomes img{
+	width: 150px;
+	height: 180px;
+}
+
+#regle .content .sous-content .symptomes {
+	padding: 30px 200px;
+}
+
+#regle .content .sous-content p {
+	line-height: 25px;
+	margin: 15px 0;
+}
+
+#regle .content .sous-content ul li {
+	padding: 5px 0;
+}
+
+
+/********** SECTION CONTACT **********/
+#contact {
+	padding: 22px 0 80px 0;
+	width: 100%;
+	height: 350px;
+	background-image: url(../IMAGES/fond-medecin.jpg);
+	background-repeat: no-repeat;
+}
+
+#contact .box-contact {
+	float: left;
+	padding: 50px 200px;
+	background: linear-gradient(to bottom, #fff, #ebefec);
+	opacity: 0.8;
+	height: 300px;
+}
+
+#contact .box-contact p {
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+#contact .box-contact button {
+	margin: 10px 0;
+	padding: 30px 40px;
+	background: orange;
+	border: none;
+}
+#contact .box-contact button span {
+	font-size: 22px;
+}
+
+#contact .statistique {
+	float: right;
+	padding: 0 100px;
+}
+
+#contact .statistique div {
+	display: inline-block;
+	float: right;
+}
+
+#contact .statistique div p {
+	line-height: 72px;
+	padding: 0 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#contact .statistique button  {
+	padding: 20px 60px;
+	background: #fff;
+	margin: 5px 0;
+	border: none;
+}
+#contact .statistique button span  {
+	font-size: 18px;
+}
+#contact .statistique button .span-1, #contact .statistique button .span-2 {
+	color: #000;
+	font-weight: bold;
+}
+#contact .statistique button .span-3 {
+	color: green;
+	font-weight: bold;
+}
+#contact .statistique button .span-4 {
+	color: red;
+	font-weight: bold;
+}
+
+
+/*********** SECTION COMMUNIQUE *********/
+#communique {
+	padding: 50px 0 80px 0;
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+#communique .content {
+	padding: 30px 350px;
+}
+#communique .content h2 {
+	text-align: center;
+	padding: 5px 0;
+}
+#communique .content .first-mesure, #communique .content .second-mesure {
+	padding: 15px 0;
+}
+
+#communique .content ol li {
+	padding: 8px 0;
+	line-height: 20px;
+	letter-spacing: 2px;
+}
+
+/********* PIED DE PAGE **********/
+footer {
+	width: 100%;
+	height: 50px;
+	background: #ddd;
+}
+footer h4 {
+	color: #d82c2e;
+	text-align: center;
+}
+footer h5 {
+	color: #d82c2e;
+	text-align: center;
+	text-transform: uppercase;
+}
+footer .footer-1 {
+	background: #000;
+	width: 100%;
+	height: 120px;
+}
+.footer-1 p {
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+	margin: 20px 0;
+}

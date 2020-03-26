@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --color-primary: #007c91;
+    --color-secondary: #e5ecec;
+    --font-color: #333;
+    --color-white: white;
+    --color-green: green;
+    --color-orange: orange;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General */
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+
+h2{
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+p{
+    font-size: 1.6rem;
+    color: var(--font-color);
+}
+
+a, a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+button{
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button:focus,
+input:focus{
+    outline: none;
+}
+
+/* *********************************** */
+/* ********** Navbar ***************** */
+
+.topnav{
+    z-index: 1;
+    padding: 1rem 0;
+    width: 100%;
+    min-height: 5rem;
+    position: fixed;
+    top: 0;
+    background: rgb(255,165,0);
+    background: linear-gradient(145deg, rgba(255,165,0,1) 0%, rgba(255,165,0,1) 0%, rgba(255,165,0,1) 45%, rgba(255,165,0,1) 45%, rgba(0,128,0,1) 100%, rgba(0,128,0,0.8421568456484156) 100%, rgba(0,128,0,0.8421568456484156) 100%); 
+}
+
+.logo{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.nav-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-info h4{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-icon{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.nav-icon img{
+    width: 100%;
+    height: 2rem;
+    object-fit: contain;
+}
+
+.menu-navigation{
+    padding: 2rem 0;
+    min-height: 8rem;
+    position: fixed;
+    top: 6rem;
+    background: var(--color-white);
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .1);
+}
+
+.nav-liste li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-liste li a{
+    color: black;
+    font-size: 1.6rem;
+}
+
+.circle{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: var(--color-white);
+    margin-right: 1rem;
+    position: relative;
+}
+
+a:focus{
+    outline: none;
+}
+
+.icon-back{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* *********************************** */
+/* ********** Header ***************** */
+
+.header{
+    margin-top: 13.5rem;
+    min-height: 80vh;
+    background-image:linear-gradient(90deg, rgba(34,193,195,0.44439774200695903) 0%, rgb(238, 168, 18) 70%), url('../images/corona-covid-19-togo-scaled.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+    color: var(--color-white);
+}
+
+.head-desc{
+    font-size: 4rem;
+}
+
+.total-cas{
+    font-size: 6rem;
+    margin-left: 1.7rem;
+    color: red;
+}
+
+.total-gueri{
+    font-size: 6rem;
+    margin-left: 1.7rem;
+    color: var(--color-green);
+}
+
+.header h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.head-btn{
+    border: none;
+    background: var(--color-white);
+    color: var(--color-green);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 1.3rem;
+    transition: .4s;
+}
+
+.head-btn:hover{
+    color: var(--color-white);
+    background: var(--color-green);
+}
+
+/* *********************************** */
+/* ********** News ***************** */
+
+.news{
+    min-height: 20rem;
+    padding: 7rem 0;
+    background: var(--color-secondary);
+}
+
+.last-news{
+    min-height: 10rem;
+    border: 1px solid black;
+}
+
+.last-new_illustration{
+    height: 25rem;
+    width: 100%;
+    background: black;
+}
+
+.last-new_illustration img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.last-new_desc{
+    padding: 2rem;
+    min-height: 10rem;
+}
+
+.recent-news_desc p{
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.last-new_desc h4{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: red;
+}
+
+.last-new_desc a{
+    color: var(--color-primary);
+    font-size: 1.6rem;
+}
+
+.recent-news_illustration{
+    flex: 1;
+    height: 15rem;
+    background: black;
+}
+
+.recent-news_illustration img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.recent-news_desc{
+    flex: 2;
+    margin-left: 2rem;
+}
+
+
+.recent-news_desc h4{
+    font-size: 2rem;
+}
+
+.recent-news_desc a{
+    color: var(--color-primary);
+    font-size: 1.6rem;
+}
+
+/* *********************************** */
+/* ********** ABout Corona ***************** */
+
+.about{
+    padding: 5rem 0;
+}
+
+/* cest quoi corona */
+
+.questions p{
+    margin-bottom: 2.5rem;
+}
+
+/* symptomes */
+
+.symptomes{
+    margin-top: 7rem;
+}
+
+.symptome-item{
+    margin-bottom: 7rem;
+}
+
+.symptome-item_illustration{
+    height: 15rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.symptome-item_illustration img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.symptome-item_desc h4{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.symptomes p{
+    margin-bottom: 2rem;
+}
+
+/* propagation */
+.propagtion{
+    margin-top: 7rem;
+}
+
+.propagation-item{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.propagation-item_illustration{
+    height: 15rem;
+    width: 100%;
+    margin: 0 auto;
+    background: black;
+}
+
+.propagation-item_illustration img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.propagation-item_desc{
+    min-height: 5rem;
+    padding: 2rem 0;
+}
+
+.propagation-item_desc h4{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.propagtion p{
+    margin-bottom: 2rem;
+}
+
+/* prevention */
+.prevention{
+    margin-top: 7rem;
+}
+.liste-prevention{
+    padding: 2rem;
+}
+
+.liste-prevention li{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+/* *********************************** */
+/* ********** Mesure Du gouvernement ***************** */
+
+.Government{
+    padding: 5rem 0;
+}
+
+.card-gouvernement{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card-header{
+    background: var(--color-green);
+}
+
+.btn-link{
+    color: var(--color-white);
+    font-size: 2rem;
+    border: none;
+}
+
+.btn-link:hover{
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.btn-link:focus{
+    text-decoration: none;
+}
+
+.card-body p{
+    margin-bottom: 3rem;
+}
+
+/* *********************************** */
+/* ********** Footer ***************** */
+
+.footer{
+    padding: 3rem 0;
+    background: var(--color-primary);
+    text-align: center;
+}
+
+.footer span{
+    font-size: 2.3rem;
+    color: var(--color-white);
+}
+
+.footer p{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ***************PAGES ReadMore************************** */
+
+.box-content{
+    width: 60%;
+    margin-top: 8rem;
+}
+
+.readmore-item_illustration{
+    height: 30rem;
+    background: black;
+}
+
+.readmore-item_desc{
+    min-height: 4rem;
+    padding: 2rem 0;
+}
+
+.readmore-item_desc h4{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.readmore-item_desc p{
+    line-height: 2.5rem;
+}
+
+
+@media screen and (max-width: 767px){
+    .nav-info h4:first-child{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .box-content{
+        width: 80%;
+    }
+}

@@ -1,0 +1,440 @@
+
+:root{
+    --color-white: #ffffff;
+    --color-orange: #ff6f00;
+    --color-vert: #40954a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif
+}
+
+
+a, a:hover{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+li{
+    list-style: none;
+}
+
+h2{
+    font-size: 3rem;
+    color: var(--color-vert);
+    border-left: var(--color-orange) 4px solid;
+    padding-left: 1rem;
+}
+/*******************************sit-header******************/
+/**********************************************************/
+
+.site-heade{
+    margin-right: 1.5rem;
+}
+
+.site-header {
+    height: 9rem;
+}
+
+.h-text{
+    margin-top: 3rem;
+}
+
+.h-text h5{
+    font-weight: bold;
+}
+
+.h-text p{
+    font-size:  2rem;
+}
+
+
+.logo{
+    height: 9rem;
+}
+/*******************************header******************/
+/**********************************************************/
+
+.header{
+    background: linear-gradient(rgba(44, 253, 2, 0.4), rgb(250, 163, 0, 0.5)) , url(../images/virus2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.orange{
+    color: var(--color-orange);
+}
+
+.text-header{
+    color: white;
+    padding-top: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+    text-align: right;
+}
+
+.text-header h1{
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+/*header-end***********************************************/
+/**********************************************************/
+
+.section-cards{
+    margin-top: 2rem;
+}
+
+.vert1{
+    color: var(--color-vert);
+}
+
+.card1{
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.card1:hover{
+    border-left: 4px solid var(--color-orange);
+}
+
+.card1 ul li{
+    font-size: 1.3rem;
+}
+
+.card1 ul li a{
+    color: #40954a;
+    font-weight: bold;
+}
+
+.img1{
+    height: 9rem;
+    margin-top: 1rem;
+}
+
+/*section1************************************************/
+/**********************************************************/
+
+.section1 p{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.hr{
+    margin-top: 3rem;
+}
+/*section2************************************************/
+/**********************************************************/
+
+.chiffres h1{
+    font-size: 5rem;
+}
+.chiffres p{
+    font-size: 1.7rem;
+}
+
+.chiffres h3{
+    font-size: 8rem;
+    color: var(--color-orange);
+}
+
+/*section3************************************************/
+/**********************************************************/
+
+#section3{
+    margin-top: 7rem;
+}
+
+.info h2{
+    font-size: 3rem;
+    color: var(--color-vert);
+    border-left: var(--color-orange) 4px solid;
+    padding-left: 1rem;
+}
+.info p{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+
+.virus{
+    height: 25rem;
+    margin-top: 2rem;
+}
+
+/*section4************************************************/
+/**********************************************************/
+
+#section4{
+    margin-top: 7rem;
+}
+
+.Symptomes h2{
+    font-size: 3rem;
+    color: var(--color-vert);
+    border-left: var(--color-orange) 4px solid;
+    padding-left: 1rem;
+}
+
+.Symptomes p{
+    font-size: 1.7rem;
+}
+
+.signs{
+    margin: 2rem 0;
+}
+
+.signs li{
+    font-size:1.8rem ;
+    padding: 1rem 0;
+}
+/*section5************************************************/
+/**********************************************************/
+
+#section5{
+    margin-top: 7rem;
+}
+
+.propagation{
+    margin-top: 4rem;
+}
+
+.section5 h4{
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/*section6************************************************/
+/**********************************************************/
+#section6{
+    margin-top: 7rem;
+}
+
+.worry{
+    margin-top: 4rem;
+}
+
+.worry p{
+    margin-bottom: 4rem;
+}
+
+
+/*section7************************************************/
+/**********************************************************/
+
+#section7{
+    margin-top: 7rem;
+}
+
+.protection h2{
+    font-size: 3rem;
+    color: var(--color-vert);
+    border-left: var(--color-orange) 4px solid;
+    padding-left: 1rem;
+}
+
+.info2{
+    margin-top: 8rem;
+}
+
+.info2 p{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+.img{
+    height: 9rem;
+}
+/*section8************************************************/
+/**********************************************************/
+#section8{
+    margin-top:7rem ;
+}
+
+.doc{
+    height: 20rem;
+    margin: 2rem 10rem;
+}
+
+.h3{
+    margin-top: 8rem;
+}
+
+.doctor h3{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.vert{
+    color: #40954a;
+    font-size: 4rem;
+}
+/*section9************************************************/
+/**********************************************************/
+
+#section9{
+    margin-top: 7rem;
+}
+
+.tableau{
+    border: 2px solid #ccc;
+}
+
+.tableau th{
+    font-size: 2rem;
+}
+
+.tableau td{
+    font-size: 2rem;
+}
+
+/*section10************************************************/
+/**********************************************************/
+
+.alert h3{
+    font-size: 3rem;
+    color: red;
+}
+.alert p{
+    font-size: 1.8rem;
+}
+
+/*footer***********************************************/
+/**********************************************************/
+
+.footer{
+    margin-top: 6rem;
+    background-color: rgb(53, 48, 48);
+}
+
+.footer h4{
+    font-size: 2rem;
+    color:white;
+}
+
+.icons{
+    margin-top: 2rem;
+}
+
+.img2{
+    height: 8rem;
+}
+
+.footer2{
+    color: white;
+    margin-top: 1rem;
+}
+
+.circle{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-vert);
+    background-color: var(--color-orange);
+    float: right;
+    margin-top: -10rem;
+    scroll-behavior: smooth;
+}
+
+.circle p{
+    font-size: 4rem;
+    color: var(--color-white);
+    margin-left: 2rem;
+    margin-top: .5rem;
+}
+
+/******************************************mediaqueries*************************************************************************/
+/************************************************************************************************************************************/
+
+@media screen and (max-width: 998px){
+
+    .h-text{
+        margin-top: 0;
+    }
+    
+    .h-text h5{
+        font-size: 0;
+    }
+    
+    .h-text p{
+        font-size:  0rem;
+    }
+
+    .logo{
+        height: 6rem;
+    }
+    
+    .text-header{
+        color: white;
+        padding-top: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    
+    .text-header h1{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    
+
+    .logo{
+        height: 6rem;
+    }
+    
+    .text-header{
+        color: white;
+        padding-top: 2rem;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    
+    .text-header h1{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .header{
+        background: linear-gradient(rgba(44, 253, 2, 0.5), rgb(250, 163, 0, 0.9)) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+    }
+
+}
+
+
+
+

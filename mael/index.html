@@ -7,134 +7,89 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Covid-19 CIV</title>
 
-    <!-- Style -->
+    <!--Style-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light topnav">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="#" class="logo">Corona Virus <br> CIV</a>
-            <div class="nav-info">
-                <h4>Le Numero vert pour plus d'infos</h4>
-                <div class="nav-icon">
-                    <img src="images/phone.png" alt="phone" class="img-fluid">
-                </div>
-                <h4>101</h4>
+        <div class="container">
+            <a class="logo" href="#">Covid-<span>19</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navlink" id="navbarNav">
+                <ul class="nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#accueil"> Accueil<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">A Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#symptome">Symptomes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#propagation">Propagation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prevention">Prévention</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mesure">Mesures gouvernementales</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Lien De navigation -->
-   <div class="menu-navigation">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div  class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav navbar-nav nav-liste">
-                        <li class="nav-item">
-                            <a href="#header" class="nav-link">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#news" class="nav-link">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">A Propos du COVID-19</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#gouvernement" class="nav-link">Mesures prises par le gouvernement</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-   </div>
-
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container text-right">
-            <h1>COVID-19 <br>Coronavirus</h1>
-            <h1 class="mt-5 head-desc">Nombre De Cas <span class="total-cas">25</span></h1>
-            <h1 class="mt-4">Nombre de personnes guéries <span class="total-gueri">3</span></h1>
-            <h3 class="mt-5">Dernière mise a jour : <span>23 Mars 2020</span></h3>
-            <a href="#symptome">
-                <button type="button" class="head-btn mr-3">Symptomes</button>
-            </a>
+    <!--Header-->
+    <header class="header" id="accueil">
+        <div class="heading">
+            <h1>Comment vous protéger <br> contre CoronaVirus <br> et rester en sécurité?</h1>
             <a href="#prevention">
-                <button type="button" class="head-btn">Mesures de preventions</button>
+                <button class="btn-prevent">Mesure de prevention</button>
             </a>
         </div>
     </header>
 
-    <!-- News -->
-    <div class="news" id="news">
+    <!--Stats-->
+    <div class="stats">
         <div class="container">
-            <h2>Dernière News Sur Le COVID-19</h2>
-            <div class="row mt-5">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 mb-5">
-                    <div class="last-news">
-                        <div class="last-new_illustration"></div>
-                        <div class="last-new_desc">
-                            <h4 class="mb-3">CIV / Transport</h4>
-                            <p class="mb-3" id="pop">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque!
-                            </p>
-                            <a href="readmore.html">Lire plus</a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4  col-xl-4 mb-3">
+                    <div class="stats-item d-flex">
+                        <div class="stats-item_icon">       
+                            <img src="images/infecte.png" alt="infecte">
+                        </div>
+                        <div class="stats-item_desc text-center">
+                            <h5>Infectés</h5>
+                            <span class="infecte">218</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                    <div class="recent-news d-flex">
-                        <div class="recent-news_illustration"></div>
-                        <div class="recent-news_desc">
-                            <h4>Fermeture des marché</h4>
-                            <hr>
-                            <p class="recentNew">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, sapiente!
-                            </p>
-                            <a href="readmore.html">Lire plus</a>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4  col-xl-4 mb-3">
+                    <div class="stats-item d-flex">
+                        <div class="stats-item_icon">
+                            <img src="images/gueri.png" alt="gueri">
+                        </div>
+                        <div class="stats-item_desc text-center">
+                            <h5>Guéris</h5>
+                            <span class="gueris">19</span>
                         </div>
                     </div>
-                    <hr>
-                    <div class="recent-news d-flex">
-                        <div class="recent-news_illustration"></div>
-                        <div class="recent-news_desc">
-                            <h4>Fermeture des marché</h4>
-                            <hr>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, sapiente!
-                            </p>
-                            <a href="readmore.html">Lire plus</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4  col-xl-4 mb-3">
+                    <div class="stats-item d-flex">
+                        <div class="stats-item_icon">
+                            <img src="images/mort.png" alt="mort">
                         </div>
-                    </div>
-                    <hr>
-                    <div class="recent-news d-flex">
-                        <div class="recent-news_illustration"></div>
-                        <div class="recent-news_desc">
-                            <h4>Fermeture des marché</h4>
-                            <hr>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, sapiente!
-                            </p>
-                            <a href="readmore.html">Lire plus</a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="recent-news d-flex">
-                        <div class="recent-news_illustration"></div>
-                        <div class="recent-news_desc">
-                            <h4>Fermeture des marché</h4>
-                            <hr>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, sapiente!
-                            </p>
-                            <a href="readmore.html">Lire plus</a>
+                        <div class="stats-item_desc text-center">
+                            <h5>Décès</h5>
+                            <span class="deces">01</span>
                         </div>
                     </div>
                 </div>
@@ -142,180 +97,249 @@
         </div>
     </div>
 
-    <!-- A Propos Du covid -->
+    <!--About  Covid-->
     <div class="about" id="about">
         <div class="container">
-            <!--Cest Quoi Coronavirus-->
-            <div class="questions">
-                <h2 class="mb-5">Qu'est-ce que le Coronavirus ?</h2>
-                <p>
-                    Les coronavirus sont une grande famille de virus qui peuvent créer des maladies chez l’homme et chez
-                    l’animal. Chez l’être humain, plusieurs coronavirus peuvent entraîner des infections respiratoires
-                    (du simple rhume à des maladies plus graves ( par exemple : le SRAS / syndrome respiratoire aigu
-                    sévère) et parfois même le décès des gens atteints.
-                </p>
-                <p>
-                    La COVID-19 (Coronavirus Disease 2019 ou Maladie à Coronavirus 2019) est la maladie infectieuse
-                    causée par un nouveau coronavirus découvert en Chine en décembre 2019 avec l’apparition de la
-                    flambée dans la ville de Wuhan.
-                </p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <img src="images/about.png" alt="about" class="img-fluid">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <h2>A propos du Covid-19</h2>
+                    <p>
+                        Les coronavirus sont une grande famille de virus qui peuvent créer des maladies chez l’homme et
+                        chez l’animal. Chez l’être humain, plusieurs coronavirus peuvent entraîner des infections
+                        respiratoires (du simple rhume à des maladies plus graves ( par exemple : le SRAS / syndrome
+                        respiratoire aigu sévère) et parfois même le décès des gens atteints.
+                    </p>
+                    <p>
+                        La COVID-19 (Coronavirus Disease 2019 ou Maladie à Coronavirus 2019) est la maladie infectieuse
+                        causée par un nouveau coronavirus découvert en Chine en décembre 2019 avec l’apparition de la
+                        flambée dans la ville de Wuhan.
+                    </p>
+                </div>
             </div>
-            <!--Les syymptomes-->
-            <div class="symptomes" id="symptome">
-                <h2>Quels sont les symptomes</h2>
-                <div class="row mt-5">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="symptome-item">
-                            <div class="symptome-item_illustration">
-                                <img src="images/woman-in-face-mask-checking-thermometer-3987152.jpg" alt="fever">
+        </div>
+    </div>
+
+    <!--Symptome-->
+    <div class="symptome" id="symptome">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <h2>Symptomes</h2>
+                    <p>
+                        Ces symptômes sont généralement peu graves et apparaissent de manière progressive. Certaines
+                        personnes peuvent être infectées sans symptôme et se sentent bien.
+
+                        Environ 80 % des personnes guérissent sans avoir besoin de traitement particulier.
+
+                        Environ 1 personne sur 6 contractant la maladie présente des symptômes plus graves, comme une
+                        sensation de manque d’air ou un essoufflement anormal.
+
+                        Les personnes âgées et celles qui ont d’autres problèmes de santé (hypertension artérielle,
+                        problèmes cardiaques ou diabète) ont plus de risques de présenter des symptômes graves.
+                    </p>
+                    <p class="text-danger">
+                        TOUTE PERSONNE QUI A DE LA FIÈVRE, QUI TOUSSE ET QUI A DES DIFFICULTÉS À RESPIRER DOIT CONSULTER
+                        UN MÉDECIN.
+                    </p>
+                    <div class="symptom-card">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="symptom-card-desc d-flex">
+                                    <span>Toux et éternuements</span>
+                                </div>
                             </div>
-                            <div class="symptome-item_desc">
-                                <h4>Fièvre</h4>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="symptom-card-desc">
+                                    <span>Forts maux de tête</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="symptome-item">
-                            <div class="symptome-item_illustration">
-                                <img src="images/toux.jpeg" alt="toux">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="symptom-card-desc d-flex">
+                                    <span>Gorge irritée</span>
+                                </div>
                             </div>
-                            <div class="symptome-item_desc">
-                                <h4>Toux</h4>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="symptom-card-desc">
+                                    <span>Essoufflement</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="symptome-item">
-                            <div class="symptome-item_illustration">
-                                <img src="images/essoufflement.jpeg" alt="esssouflement">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="symptom-card-desc d-flex">
+                                    <span>Fièvre chaude</span>
+                                </div>
                             </div>
-                            <div class="symptome-item_desc">
-                                <h4>Essoufflement</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="symptome-item">
-                            <div class="symptome-item_illustration">
-                                <img src="images/gorge.jpeg" alt="gorge">
-                            </div>
-                            <div class="symptome-item_desc">
-                                <h4>Gorge iritée</h4>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <div class="symptom-card-desc">
+                                    <span>Douleur musculaire</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p>
-                    Ces symptômes sont généralement peu graves et apparaissent de manière progressive. Certaines
-                    personnes peuvent être infectées sans symptôme et se sentent bien.
-                </p>
-                <p>
-                    Environ 80 % des personnes guérissent sans avoir besoin de traitement particulier.
-                </p>
-                <p>
-                    Environ 1 personne sur 6 contractant la maladie présente des symptômes plus graves, comme une
-                    sensation de manque d’air ou un essoufflement anormal.
-                </p>
-                <p>
-                    Les personnes âgées et celles qui ont d’autres problèmes de santé (hypertension artérielle,
-                    problèmes cardiaques ou diabète) ont plus de risques de présenter des symptômes graves.
-                </p>
-                <p class="text-danger">
-                    TOUTE PERSONNE QUI A DE LA FIÈVRE, QUI TOUSSE ET QUI A DES DIFFICULTÉS À RESPIRER DOIT CONSULTER UN
-                    MÉDECIN.
-                </p>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center">
+                    <img src="images/symptoms.png" alt="symptome" class="img-fluid">
+                </div>
             </div>
-            <!-- Propagation du corona-->
-            <div class="propagtion">
-                <div class="container">
-                    <h2>Comment le Coronavirus se propage-t-il ?</h2>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="propagation-item">
-                                <div class="propagation-item_illustration"></div>
-                                <div class="propagation-item_desc">
-                                    <h4>Gouttelettes <br> respiratoires</h4>
+        </div>
+    </div>
+
+    <!--Propagation-->
+    <div class="propagation" id="propagation">
+        <div class="container">
+            <h2>Comment le Covid-19 se propage-t-il ?</h2>
+            <div class="row mb-5">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="propagation-card text-center">
+                        <img src="images/main.png" alt="main">
+                        <div class="propagation-card_desc">
+                            <h4>Contact humain</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="propagation-card text-center">
+                        <img src="images/air.png" alt="air">
+                        <div class="propagation-card_desc">
+                            <h4>Transmission aérienne</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="propagation-card text-center">
+                        <img src="images/objet.png" alt="objet">
+                        <div class="propagation-card_desc">
+                            <h4>Objet contaminé</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Le coronavirus COVID-19 est transmise par des personnes porteuses du virus. La maladie peut se
+                transmettre d’une personne à l’autre principalement par des gouttelettes respiratoires expulsées par le
+                nez ou par la bouche lorsqu’une personne tousse ou éternue.
+            </p>
+            <p>
+                Ces gouttelettes peuvent se retrouver sur des objets ou des surfaces autour de la personne en question.
+                On peut alors contracter la COVID-19 si on touche ces objets ou ces surfaces et si on se touche ensuite
+                les yeux, le nez ou la bouche.
+            </p>
+            <p>
+                Il est également possible de contracter la COVID-19 en respirant des gouttelettes d’une personne malade
+                qui vient de tousser ou d’éternuer. C’est pourquoi il est important de se tenir à plus d’un mètre d’une
+                personne malade.
+            </p>
+            <p>
+                Beaucoup de personnes atteintes présentent des symptômes discrets aux premiers stades de la maladie (par
+                exemple, une toux légère). Il est alors possible de contracter la COVID-19 au contact de ces personnes,
+                même si elles ne se sentent pas malades.
+            </p>
+        </div>
+    </div>
+
+    <!--Mesure de prevention-->
+    <div class="prevention" id="prevention">
+        <div class="container">
+            <h2>Mesures de préventions</h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="avoid mb-5">
+                        <div class="avoid-head">
+                            <h3>Choses à ne pas faire</h3>
+                        </div>
+                        <div class="avoid-body">
+                            <div class="avoid-item d-flex align-items-center">
+                                <div class="avoid-item-icon mr-3">
+                                    <img src="images/identity.png" alt="face">
+                                </div>
+                                <div class="avoid-item-desc">
+                                    <span>Ne touchez pas votre visage ou votre nez</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="propagation-item">
-                                <div class="propagation-item_illustration">
-                                    <img src="images/two-person-in-long-sleeved-shirt-shakehand-955395.jpg" alt="salutation">
+                            <hr>
+                            <div class="avoid-item d-flex align-items-center">
+                                <div class="avoid-item-icon mr-3">
+                                    <img src="images/people.png" alt="people">
                                 </div>
-                                <div class="propagation-item_desc">
-                                    <h4>Personnes</h4>
+                                <div class="avoid-item-desc">
+                                    <span>Évitez les endroits bondés</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="propagation-item">
-                                <div class="propagation-item_illustration">
-                                    <img src="images/kitchen-ceramic-jars-6258.jpg" alt="object">
+                            <hr>
+                            <div class="avoid-item d-flex align-items-center">
+                                <div class="avoid-item-icon mr-3">
+                                    <img src="images/pandemic.png" alt="pandemic">
                                 </div>
-                                <div class="propagation-item_desc">
-                                    <h4>Objets contaminés</h4>
+                                <div class="avoid-item-desc">
+                                    <span>Évitez les contacts étroits</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p>
-                        Le coronavirus COVID-19 est transmise par des personnes porteuses du virus. La maladie peut se
-                        transmettre d’une personne à l’autre principalement par des gouttelettes respiratoires expulsées
-                        par le nez ou par la bouche lorsqu’une personne tousse ou éternue.
-                    </p>
-                    <p>
-                        Ces gouttelettes peuvent se retrouver sur des objets ou des surfaces autour de la personne en
-                        question. On peut alors contracter la COVID-19 si on touche ces objets ou ces surfaces et si on
-                        se touche ensuite les yeux, le nez ou la bouche.
-                    </p>
-                    <p>
-                        Il est également possible de contracter la COVID-19 en respirant des gouttelettes d’une personne
-                        malade qui vient de tousser ou d’éternuer. C’est pourquoi il est important de se tenir à plus
-                        d’un mètre d’une personne malade.
-                    </p>
-                    <p>
-                        Beaucoup de personnes atteintes présentent des symptômes discrets aux premiers stades de la
-                        maladie (par exemple, une toux légère). Il est alors possible de contracter la COVID-19 au
-                        contact de ces personnes, même si elles ne se sentent pas malades.
-                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="good">
+                        <div class="good-head">
+                            <h3>Choses à ne pas faire</h3>
+                        </div>
+                        <div class="good-body">
+                            <div class="good-item d-flex align-items-center">
+                                <div class="avoid-item-icon mr-3">
+                                    <img src="images/hand-wash.png" alt="hand">
+                                </div>
+                                <div class="avoid-item-desc">
+                                    <span>Se laver regulièrement les mains</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="avoid-item d-flex align-items-center">
+                                <div class="avoid-item-icon mr-3">
+                                    <img src="images/cough.png" alt="cough">
+                                </div>
+                                <div class="avoid-item-desc">
+                                    <span>Toussez dans un mouchoir ou dans le pli du coude</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="avoid-item d-flex align-items-center">
+                                <div class="avoid-item-icon mr-3">
+                                    <img src="images/coronavirus.png" alt="corona">
+                                </div>
+                                <div class="avoid-item-desc">
+                                    <span>Portez un masque si vous avez des symptômes</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="avoid-item d-flex align-items-center">
+                                <div class="avoid-item-icon mr-3">
+                                    <img src="images/stay-at-home.png" alt="">
+                                </div>
+                                <div class="avoid-item-desc">
+                                    <span>Restez à la maison</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--Mesure de prevention-->
-            <div class="prevention" id="prevention">
-                <div class="container">
-                    <h2>Comment se protéger et éviter la propagation du coronavirus ?</h2>
-                    <ul class="liste-prevention">
-                        <li>
-                            <b>Lavez-vous très régulièrement les mains avec de l’eau et du savon</b>, ou désinfectez-les
-                            avec du gel hydroalcoolique ;
-                        </li>
-                        <li>
-                            Toussez ou éternuez dans un mouchoir ou dans le pli de votre coude ;
-                        </li>
-                        <li>
-                            Saluez sans se serrer les mains, évitez les embrassades ;
-                        </li>
-                        <li>
-                            Restez à une distance d’au moins 1 mètre des autres ;
-                        </li>
-                        <li>
-                            Ne pas se toucher les yeux, le nez ou la bouche ;
-                        </li>
-                        <li>
-                            Portez un masque si vous avez des symptômes respiratoires ;
-                        </li>
-                        <li>
-                            Restez à la maison si vous êtes malade.
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div class="contact">
+        <div class="container">
+            <h3>Pour Plus d'informations ou en cas d'urgence contactez les numéros suivants:</h3>
+            <span>125</span>
+            <span>101</span>
+            <span>119</span>
+            <span>125</span>
         </div>
     </div>
 
     <!--Mesure prise par le gouvernement-->
-    <div class="Government" id="gouvernement">
+    <div class="Government" id="mesure">
         <div class="container">
             <h2>Mesures prises par le gouvernement</h2>
             <div class="accordion mt-5" id="accordionExample">
@@ -371,17 +395,44 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!--Footer-->
     <footer class="footer">
-        <span>ENSEMBLE, LUTTONS CONTRE LE CORONAVIRUS!!!!</span>
-        <p>#Restez Chez Vous Et Sauvez Des Vies!!!!</p>
-        <p>#StayAtHome!!!!</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                    <div class="ministere d-flex align-items-center">
+                        <div class="ministere-logo mr-3">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <span>Ministère De La Santé</span>
+                    </div>
+                    <div class="resaeux d-flex align-items-center mt-5">
+                        <span>Suivez-nous:</span>
+                        <div class="resaux-logo ml-2 mr-3">
+                            <img src="images/facebook.png" alt="facebook">
+                        </div>
+                        <div class="resaux-logo ml-2 mr-3">
+                            <img src="images/twitter.png" alt="twitter">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="message-ministere">
+                        <p>Respectons Rigoureusement Les Consignes Sanitères</p>
+                        <p>Restez-Chez Vous !!!!!</p>
+                        <p>Ensemble Luttons Contre Le Covid-19 !!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Tout droit reservé &copy; DevFront (Template Covid-19)</span>
+        </div>
     </footer>
-
-    <!-- script -->
+    
+    <!--Script-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

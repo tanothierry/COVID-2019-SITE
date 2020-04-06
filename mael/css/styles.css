@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 :root{
-    --color-primary: #007c91;
-    --color-secondary: #e5ecec;
-    --font-color: #333;
     --color-white: white;
     --color-green: green;
     --color-orange: orange;
+    --color-grey: #f1f5fe;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+
+*:focus{
+    outline: none;
 }
 
 html{
@@ -22,48 +24,29 @@ html{
 
 body{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* General */
+/* general */
 
-h1{
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--color-white);
+a, a:hover{
+    text-decoration: none;
 }
-
 
 h2{
-    font-size: 2.5rem;
-    color: var(--color-primary);
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
 }
 
 p{
     font-size: 1.6rem;
-    color: var(--font-color);
+    margin-bottom: 4rem;
+    line-height: 2.8rem;
 }
 
-a, a:hover{
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--color-white);
-}
-
-button{
-    cursor: pointer;
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-button:focus,
-input:focus{
-    outline: none;
-}
-
-/* *********************************** */
-/* ********** Navbar ***************** */
+/* ************************************************************************************************** */
+/* **************** Navbar******************************* */
 
 .topnav{
     z-index: 1;
@@ -77,299 +60,249 @@ input:focus{
 }
 
 .logo{
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: bold;
-}
-
-.nav-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-info h4{
+    font-size: 2.5rem;
     color: var(--color-white);
-    font-size: 2rem;
     font-weight: bold;
 }
 
-.nav-icon{
-    height: 2rem;
-    width: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+.logo  span{
+    color: var(--color-green);
 }
 
-.nav-icon img{
-    width: 100%;
-    height: 2rem;
-    object-fit: contain;
+.logo:hover{
+    color: var(--color-white);
 }
 
-.menu-navigation{
-    padding: 2rem 0;
-    min-height: 8rem;
-    position: fixed;
-    top: 6rem;
-    background: var(--color-white);
-    width: 100%;
-    z-index: 1;
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .1);
-}
-
-.nav-liste li{
-    list-style: none;
-    margin-right: 2rem;
-}
-
-.nav-liste li a{
-    color: black;
+.navlink ul li a{
+    color: var(--color-white);
     font-size: 1.6rem;
+    transition: .5s;
 }
 
-.circle{
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    background: var(--color-white);
-    margin-right: 1rem;
-    position: relative;
+.navlink ul li a:hover{
+   font-weight: bold;
 }
 
-a:focus{
-    outline: none;
-}
-
-.icon-back{
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-/* *********************************** */
-/* ********** Header ***************** */
+/* ************************************************************************************************** */
+/* **************** Header ******************************* */
 
 .header{
-    margin-top: 13.5rem;
-    min-height: 80vh;
-    background-image:linear-gradient(90deg, rgba(34,193,195,0.44439774200695903) 0%, rgb(238, 168, 18) 70%), url('../images/corona-covid-19-togo-scaled.jpeg');
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/woman-wearing-face-mask-3902881.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5rem 0;
+    height: 100vh;
+}
+
+.heading{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+
+.heading h1{
     color: var(--color-white);
-}
-
-.head-desc{
-    font-size: 4rem;
-}
-
-.total-cas{
-    font-size: 6rem;
-    margin-left: 1.7rem;
-    color: red;
-}
-
-.total-gueri{
-    font-size: 6rem;
-    margin-left: 1.7rem;
-    color: var(--color-green);
-}
-
-.header h3{
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.head-btn{
-    border: none;
-    background: var(--color-white);
-    color: var(--color-green);
-    font-weight: bold;
-    font-size: 1.8rem;
-    margin-top: 1.3rem;
-    transition: .4s;
-}
-
-.head-btn:hover{
-    color: var(--color-white);
-    background: var(--color-green);
-}
-
-/* *********************************** */
-/* ********** News ***************** */
-
-.news{
-    min-height: 20rem;
-    padding: 7rem 0;
-    background: var(--color-secondary);
-}
-
-.last-news{
-    min-height: 10rem;
-    border: 1px solid black;
-}
-
-.last-new_illustration{
-    height: 25rem;
-    width: 100%;
-    background: black;
-}
-
-.last-new_illustration img{
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
-}
-
-.last-new_desc{
-    padding: 2rem;
-    min-height: 10rem;
-}
-
-.recent-news_desc p{
-    overflow-wrap: break-word;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.last-new_desc h4{
-    font-size: 2.3rem;
-    font-weight: bold;
-    color: red;
-}
-
-.last-new_desc a{
-    color: var(--color-primary);
-    font-size: 1.6rem;
-}
-
-.recent-news_illustration{
-    flex: 1;
-    height: 15rem;
-    background: black;
-}
-
-.recent-news_illustration img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.recent-news_desc{
-    flex: 2;
-    margin-left: 2rem;
-}
-
-
-.recent-news_desc h4{
-    font-size: 2rem;
-}
-
-.recent-news_desc a{
-    color: var(--color-primary);
-    font-size: 1.6rem;
-}
-
-/* *********************************** */
-/* ********** ABout Corona ***************** */
-
-.about{
-    padding: 5rem 0;
-}
-
-/* cest quoi corona */
-
-.questions p{
-    margin-bottom: 2.5rem;
-}
-
-/* symptomes */
-
-.symptomes{
-    margin-top: 7rem;
-}
-
-.symptome-item{
-    margin-bottom: 7rem;
-}
-
-.symptome-item_illustration{
-    height: 15rem;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.symptome-item_illustration img{
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
-}
-
-.symptome-item_desc h4{
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.symptomes p{
-    margin-bottom: 2rem;
-}
-
-/* propagation */
-.propagtion{
-    margin-top: 7rem;
-}
-
-.propagation-item{
-    margin-top: 4rem;
+    font-size: 4rem ;
     margin-bottom: 4rem;
 }
 
-.propagation-item_illustration{
-    height: 15rem;
-    width: 100%;
-    margin: 0 auto;
-    background: black;
+.btn-prevent{
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
+    background: var(--color-green);
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: .3s;
 }
 
-.propagation-item_illustration img{
+.btn-prevent:hover{
+    background: var(--color-orange);
+}
+
+/* ************************************************************************************************** */
+/* **************** Header ******************************* */
+
+.stats{
+    min-height: 5rem;
+    padding: 3rem 0;
+}
+
+.stats .container{
+    width: 70%;
+}
+
+.stats-item{
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.stats-item_icon{
+    height: 7rem;
+    width: 7rem;
+    margin-right: 1rem;
+}
+
+.stats-item_icon img{
+    height: 7rem;
     width: 100%;
-    height: 15rem;
     object-fit: cover;
 }
 
-.propagation-item_desc{
-    min-height: 5rem;
-    padding: 2rem 0;
+.stats-item_desc h5{
+    font-size: 2rem;
 }
 
-.propagation-item_desc h4{
-    font-size: 2rem;
+.stats-item_desc span{
+    font-size: 3rem;
+}
+
+.infecte{
+    color: var(--color-orange);
+}
+
+.gueris{
+    color: var(--color-green);
+}
+
+.deces{
+    color: rgb(173, 12, 12);
+}
+
+/* ************************************************************************************************** */
+/* **************** About covid ******************************* */
+
+.about{
+    min-height: 10rem;
+    background-color: var(--color-grey);
+    padding: 5rem 0;
+}
+
+
+/* ************************************************************************************************** */
+/* ****************Symptomes******************************* */
+
+.symptome{
+    padding: 5rem 0 0;
+}
+
+.symptom-card-desc{
+    padding: 1.5rem;
+    background: var(--color-green);
+    margin-bottom: 1rem;
+    transition: .3s;
+}
+
+.symptom-card-desc:hover{
+    background: var(--color-orange);
+}
+
+.symptom-card-desc span{
+    color: var(--color-white);
     font-weight: bold;
+    font-size: 1.6rem;
+}
+
+/* ************************************************************************************************** */
+/* ****************Symptomes******************************* */
+
+.propagation{
+    background: var(--color-grey);
+    padding: 5rem 0;
+}
+
+.propagation-card{
+    background: var(--color-white);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border: 1px solid var(--color-green);
+}
+
+.propagation-card_desc h4{
+    font-size: 2rem;
+}
+
+/* ************************************************************************************************** */
+/* ****************Mesure de prevention******************************* */
+
+.prevention{
+    padding: 5rem 0;
+}
+
+.avoid-head{
+    background: var(--color-orange);
+    padding: 1rem 0;
     text-align: center;
 }
 
-.propagtion p{
-    margin-bottom: 2rem;
+.avoid-head h3{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-/* prevention */
-.prevention{
-    margin-top: 7rem;
-}
-.liste-prevention{
+.avoid-body{
     padding: 2rem;
+    box-shadow: 0px 2px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.liste-prevention li{
-    font-size: 1.7rem;
-    margin-top: 1rem;
+.avoid-item-icon{
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    border: 1px solid var(--color-green);
+}
+
+.avoid-item-icon img{
+    height: 7rem;
+    width: 70%;
+    object-fit: contain;
+}
+
+.avoid-item-desc span{
+    font-size: 1.8rem;
+}
+
+.good-head{
+    background: var(--color-green);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.good-head h3{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.good-body{
+    padding: 2rem;
+    box-shadow: 0px 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* ************************************************************************************************** */
+/* ****************Contact******************************* */
+
+.contact{
+    text-align: center;
+    padding: 3rem 0;
+    background: rgb(255,165,0);
+    background: linear-gradient(145deg, rgba(255,165,0,1) 0%, rgba(255,165,0,1) 0%, rgba(255,165,0,1) 45%, rgba(255,165,0,1) 45%, rgba(0,128,0,1) 100%, rgba(0,128,0,0.8421568456484156) 100%, rgba(0,128,0,0.8421568456484156) 100%);
+}
+
+.contact h3{
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+}
+
+.contact span{
+    background: var(--color-white);
+    font-size: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
 }
 
 /* *********************************** */
@@ -386,6 +319,11 @@ a:focus{
 
 .card-header{
     background: var(--color-green);
+}
+
+.card-header h2{
+    
+    margin-top: 0;
 }
 
 .btn-link{
@@ -407,66 +345,65 @@ a:focus{
     margin-bottom: 3rem;
 }
 
-/* *********************************** */
-/* ********** Footer ***************** */
+/* ************************************************************************************************** */
+/* ****************Footer******************************* */
 
 .footer{
-    padding: 3rem 0;
-    background: var(--color-primary);
+    padding: 5rem 0 0;
+    background: var(--color-grey);
+}
+
+.ministere-logo{
+    height: 7rem;
+    width: 7rem;
+}
+
+.ministere-logo img{
+    height: 7rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ministere span{
+    font-size: 2rem;
+}
+
+.resaux-logo{
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: var(--color-white);
+    border: 1px solid var(--color-green);
+}
+
+.resaux-logo img{
+    width: 100%;
+    height: 2.5rem;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resaeux span{
+    font-size: 1.6rem;
+}
+
+.message-ministere p{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.copyright{
+    background: var(--color-green);
+    padding: 2rem 0;
     text-align: center;
 }
 
-.footer span{
-    font-size: 2.3rem;
+.copyright span{
+    font-size: 1.6rem;
     color: var(--color-white);
-}
-
-.footer p{
-    margin-top: 2rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--color-white);
-}
-
-
-/* ******************************************************* */
-/* ******************************************************* */
-/* ***************PAGES ReadMore************************** */
-
-.box-content{
-    width: 60%;
-    margin-top: 8rem;
-}
-
-.readmore-item_illustration{
-    height: 30rem;
-    background: black;
-}
-
-.readmore-item_desc{
-    min-height: 4rem;
-    padding: 2rem 0;
-}
-
-.readmore-item_desc h4{
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-
-.readmore-item_desc p{
-    line-height: 2.5rem;
-}
-
-
-@media screen and (max-width: 767px){
-    .nav-info h4:first-child{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 550px){
-    .box-content{
-        width: 80%;
-    }
 }

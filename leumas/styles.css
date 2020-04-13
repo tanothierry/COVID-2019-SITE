@@ -1,0 +1,963 @@
+*{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+
+}
+
+header{
+    position: relative;
+}
+header .div0{
+    z-index: -1;
+    position: relative;
+
+}
+
+header .div0 video{
+    position: fixed;
+    width: 100%;
+    height: 90em;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: -30em;
+} 
+
+header .div0 video:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -30em;
+
+}
+
+header .div1{
+    background-color: rgba(255, 255, 255, 0.267);
+    height: 55px;
+    width: 100%;
+}
+
+header .div1 ul{
+    text-align: center;
+}
+
+header .div1 ul li{
+    display: inline-block;
+}
+
+header .div1 ul .li1{
+    float: left;
+    margin-left: 50px;
+}
+header .div1 ul .li1 img{
+    width: 60px;
+    z-index: 10;
+}
+
+header .div1 ul .li1 p{
+    font-size: 12px;
+}
+
+/* ...... */
+
+header .div1 ul .li2 a{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 175, 28);
+}
+
+header .div1 ul .li2 p{
+    font-size: 12px;
+    text-shadow: none;
+    color: rgb(224, 224, 224);
+}
+
+header .div1 ul .li2 span{
+    font-size: 20px;
+    text-shadow: none;
+
+}
+header .div1 ul .li3{
+    float: right;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 0 0 10px 10px;
+}
+header .div1 ul .li3 img{
+    width: 80px;
+    padding: 0 30px;
+}
+
+/* ................ */
+
+header .div2{
+    position: fixed;
+    top: 50%;
+    left: -18%;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: 2;
+    overflow: hidden;
+}
+
+header .div2:hover{
+    left: 0;
+}
+
+header .div2 li{
+    font-size: 17px;
+    background-color: rgb(35, 124, 105);
+    padding: 8px 60px;
+    border-radius: 0 40px 40px 0;
+    position: relative;
+}
+
+header .div2 p span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+header .div2 img{
+    animation: animate 0.5s linear infinite;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0%;
+    left: 83%;
+    transform: translate(-50%-50%);
+}
+@keyframes animate{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+
+    }
+}
+
+/* .......... */
+
+header .div3{
+    position: fixed;
+    top: 85%;
+    left: 92%;
+    bottom: 0;
+    z-index: 3;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+header .div3 li{
+    position: relative;
+}
+
+header .div3 img{
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+header .div3 img:active{
+    transform: scale(0.7);
+
+}
+
+/* ....................................section1............ ....................*/
+
+.navparent{
+    background: center fixed  url(img/photo-1586264084461-02539d863da6.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.navparent .h1{
+    text-align: center;
+    font-size:  30px;
+    padding: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+.navparent .section1{
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 30em;
+    box-shadow: 0px 0px 2px 1px rgba(54, 54, 54, 0.3);
+    width: 100%;
+    z-index: 2;
+}
+
+.navparent .section1 li{
+    margin-left: 20px;
+    display: inline-block;
+    width: 150px;
+
+}
+
+.navparent .section1 li p{
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    width: 95px;
+    padding: 10px 5px;
+    box-shadow: 0px 0px 2px 1px rgba(54, 54, 54, 0.3);
+    color: black;
+}
+
+.navparent .section1 .p2{
+    z-index: -2;
+    position: relative;
+    transform: skew(-50deg);
+    font-size: 0px;
+    margin-top: -2.2%;
+    margin-left: 3%;
+    padding: 2.2px 4px;
+    box-shadow: 0px 0px 0px 1px rgba(54, 54, 54, 0.3);
+    font-weight: bold;
+
+}
+.navparent .section1  li ul{
+    display: none;
+    position: absolute;
+}
+
+.navparent .section1  li:hover ul{
+    display: block;
+}
+.navparent .section1  li ul li{
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 10px;
+    width: 350px;
+    transition: 0.5s;
+    border-bottom: 1px solid rgba(187, 184, 184, 0.322);
+}
+
+.navparent .section1  li ul li:hover {
+    background-color: orange;
+
+}
+
+
+.navparent .section1  li ul li a{
+    color: rgb(0, 0, 0);
+
+}
+
+.navparent .section1  li ul li:hover a{
+    color: rgb(255, 255, 255);
+}
+
+.navparent .section1  li i{
+    padding: 0 10px;
+    color: black;
+}
+
+
+.navparent .section1  #li .p1
+{
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    color: orange;
+
+}
+
+.navparent .section1  #li .p2{
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+
+}
+.navparent .section1  #li i{
+    color: orange;
+
+}
+
+.navparent .section1 .li2 li{
+    width: 210px;
+    padding: 15px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.navparent .section1  .li2 li ul{
+    margin-left: 92%;
+    margin-top: -14%;
+    border-left: 4px solid black;
+    display: none;
+}
+
+.navparent .section1 .li2 li:hover ul {
+    display: block;
+}
+
+
+.navparent .section1  #li  li{
+    color: orange;
+}
+
+.navparent .section1  #li  li:hover{
+    color: rgb(255, 255, 255);
+}
+
+.navparent .section1 .li2 li li{
+    width: 100px;
+background-color: rgba(255, 255, 255, 0.74);
+
+}
+
+.navparent .section1  .li3 li{
+    font-size: 13px;
+}
+.navparent .section1 .li2 .l01 li {
+    background-color: rgba(255, 255, 255, 0.74);
+    border-left:none;
+
+}
+
+.navparent .section1 .li2 .l01 li:hover{
+    background-color: rgba(255, 255, 255, 0.74);
+
+}
+.navparent .section1 .li2 .l0:hover{
+    width: 300px;
+    
+}
+
+
+
+ /* .......................................section2.................................... */
+
+.section2{
+    text-align: center;
+}
+
+.section2 div{
+    background-color: rgba(243, 243, 243, 0.74);
+    height: 690px;
+}
+
+
+.section2 div li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.section2 div li img{
+    margin-top: -15%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.section2 div ul li  nav p{
+        color: rgb(87, 87, 87);
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px;
+}
+
+.section2 div .p0{
+    text-align: center;
+    color: rgb(31, 31, 31);
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.384);
+    width: 100%;
+    padding: 40px 0;
+
+}
+
+.section2 div .p0 span em{
+    font-size: 18px;
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+}
+
+/* ......................................section3............. */
+
+.section3{
+    text-align: center;
+}
+
+
+.section3 div{
+    position: relative;
+    background:linear-gradient(to bottom,rgba(255, 255, 255, 0.877),rgba(255, 255, 255, 0.596));
+    height: 700px;
+    width: 100%;
+
+}
+
+
+.section3 div li{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin:  16.5px;
+    box-shadow: 0px 0px 1px 1px rgba(153, 153, 153, 0.3);
+    background-color: rgba(255, 255, 255, 0.356);
+    box-shadow:0px 0px 1px 5px rgba(214, 214, 214, 0.712);
+
+}
+
+.section3 div li::before{
+    position: absolute;
+    content: " ";
+    top: -20%;
+    left: 50%;
+    height: 100%;
+    width: 150%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(68, 68, 68);
+    border-radius: 250px;
+    transition: 0.6s;
+}
+
+.section3 div li p{
+    padding: 10px;
+    color: rgb(88, 88, 88);
+    position: relative;
+    font-size: 14px;
+}
+
+
+.section3 div li h1{
+    margin: 15px;
+
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+.section3 div li:hover p{
+    color: rgb(255, 255, 255);
+    background:none;
+
+}
+.section3 div li:hover h1{
+    color: rgb(255, 255, 255);
+    background:none;
+
+}
+
+.section3 div li:hover::before{
+    top: 50%;
+    border-radius:0;
+    transition: 0.3s;
+}
+
+.section3 div li .img{
+    position: relative;
+    border: 4px solid  rgb(255, 255, 255);
+}
+
+.section3 div li h2{
+    position: relative;
+    font-size: 15px;
+    margin: 25px 10px;
+    background-color: orange;
+    padding: 10px 2px 10px 30px;
+    width: 200px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+
+
+.section3 div li:hover h2{   
+    background-color: #ffffff;
+}
+
+.section3 div li:hover h2 a{   
+    color: black;
+}
+.section3 div li h2:active{
+    transform: scale(0.9);
+}
+
+
+.section3 div li a img{
+    transition: 0.5s;
+    width: 28px;
+    height: 30px;
+    position: absolute;
+    top: 51.5%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    box-shadow: none;
+
+}
+
+
+/* ........................................section4.......................... */
+
+.section4{
+    background-color: rgba(228, 228, 228, 0.911);
+    background-size: cover;
+}
+ 
+.section4 nav{
+    display: inline-block;
+    text-align: initial;
+    margin: 0 10px;
+}
+
+
+.section4 nav div h1{
+    width: 600px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: initial;
+    font-size: 20px;
+    border-left: 8px solid black;
+}
+
+/* ....nav1.. */
+
+.section4 .nav1 {
+    border-left: 8px solid orange;
+    border-right: 8px solid orange;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 58em;
+    margin-bottom: 50px;
+    height: 168em;
+
+}
+
+.section4 .nav1 div{
+    margin-left: 10px;
+}
+.section4 .nav1 .div2{
+    margin-top: 50px;
+}
+
+
+.section4 .nav1 .div2 li {
+    position: relative;
+    margin: 30px 0 0 120px;
+    background-color: rgb(255, 255, 255);
+    width: 750px;
+    height: 400px;
+    box-shadow: 0px 0px 2px 1px rgba(85, 85, 85, 0.3);
+    transition: 0.5s;
+}
+
+.section4 .nav1 .div2 li:hover{
+    background: none;
+}
+
+.section4 .nav1 .div2 img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+    box-shadow: 0px 0px 2px 1px rgba(85, 85, 85, 0.3);
+
+}
+
+
+.section4 .nav1 .div2 li:hover img{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.section4 .nav1 .div2 li nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    transition: 0.5s;
+}
+
+.section4 .nav1 .div2 li nav h1{
+    font-size: 20px;
+}
+
+.section4 .nav1 .div2 li nav p{
+    margin-top: 60px;
+    color: rgb(95, 95, 95);
+    width: 500px;
+
+}
+
+.section4 .nav1 .div2 li:hover h1,
+.section4 .nav1 .div2 li:hover p{
+    opacity: 0;
+}
+
+.section4 .nav1 .div2 li nav h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 80px;
+    font-size: 15px;
+    background-color: rgb(255, 136, 0);
+    padding: 15px 5px 15px 35px;
+    width: 180px;
+    position: relative;
+    transition: 0.5s;
+    
+}
+.section4 .nav1 .div2 li:hover nav h2 img{
+    width: 38px;
+    height: 40px;
+    position: absolute;
+    top: 51.5%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+.section4 .nav1 .div2 li:hover nav h2{
+    position: absolute;
+    top: 70%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px rgba(85, 85, 85, 0.3);
+}
+
+.section4 .nav1 .div2 li nav h2 img{
+    transition: 0.5s;
+    width: 38px;
+    height: 40px;
+    position: absolute;
+    top: 51.5%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    box-shadow: none;
+
+}
+.section4 .nav1 .div2 li nav h2:active{
+    transform:translate(-50%,-50%) scale(0.9);
+    position: absolute;
+    top: 70%;
+    left: 95%;
+}
+
+
+
+/* ....nav2.. */
+
+.section4 .nav2{
+    position: absolute;
+    width: 350px;
+    border-left: 8px solid orange;
+    border-right: 8px solid orange;
+    background-color: rgb(255, 255, 255);
+    height: 90px;
+}
+
+.section4 .nav2 .div1 h1{
+    width: 300px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.section4 .nav2 .div1{
+    margin: 0 10px;
+    width: 150px;
+}
+.section4 .nav2 .div2{
+    position: relative;
+    margin-top: 50px;
+    border-top: 10px solid rgb(255, 255, 255);
+}
+.section4 .nav2 .div2 li{
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.253);
+    margin: 0 0 5px 0;
+}
+
+.section4 .nav2 .div2 li .a{
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    height: 62px;
+    position: relative;
+    font-size: 14px;
+    color: orange;
+}
+
+.section4 .nav2 .div2 li p{
+    margin-left: 90px;
+    margin-top: 8px;
+    color: orange;
+}
+
+
+
+.section4 .nav2 .div2 li div{
+    background-color: rgba(255, 255, 255, 0.349);
+    overflow: hidden;
+}
+
+
+
+.section4 .nav2 .div2 li div a{
+    padding: 5px;
+    display: block;
+    color: rgb(56, 56, 56);
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.section4 .nav2 .div2 li a img{
+    position: absolute;
+    text-align: initial;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ....nav3.. */
+
+
+.section4 .nav3 {
+    border-left: 8px solid orange;
+    border-right: 8px solid orange;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 58em;
+    margin-bottom: 50px;
+    height: 35em;
+}
+
+.section4 .nav3 div{
+    margin-left: 10px;
+}
+.section4 .nav3 .div1{
+    margin-top: 50px;
+}
+
+
+.section4 .nav3 .div1 li{
+    display: inline-block;
+    background-color: orange;
+    margin-top: 20px;
+    height: 200px;
+    text-align: center;
+}
+
+
+
+.section4 .nav3 .div1 li iframe{
+    width: 280px;
+    height: 170px;
+
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* .........................section5.............. */
+.section5  ul{
+    padding: 10px;
+}
+
+.section5  h1{
+    margin-left: 11em;
+    color: rgb(26, 114, 110);
+    
+}
+.section5 li{
+    width: 60px;
+    height: 40px;
+    position: relative;
+    margin-left: 10em;
+    display: inline-block;
+    transition: 0.5s;
+}
+.section5 li:active{
+    transform: scale(0.9);
+}
+.section5 .a{
+    background-color: rgb(59, 151, 243) ;
+}
+.section5 .b{
+    background-color: rgb(42, 209, 195) ;
+}
+.section5 .c{
+    background-color: rgb(191, 44, 204) ;
+}
+.section5 li i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section5 .a nav{
+    position: absolute;
+    top: 50%;
+    left: 208%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(4, 116, 228) ;
+    width: 150px;
+    height: 40px;
+}
+
+.section5 .b nav{
+    background-color: rgb(16, 145, 134) ;
+    position: absolute;
+    top: 50%;
+    left: 208%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 40px;
+}
+
+.section5 .c nav{
+    background-color: rgb(134, 16, 145) ;
+    position: absolute;
+    top: 50%;
+    left: 208%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 40px;
+}
+.section5 li nav a{
+
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+.section5 li nav i{
+    margin-left: 50px;
+}
+
+
+
+/* ...................................footer................. */
+footer{
+    position: relative;
+}
+
+footer div:nth-child(1){
+    background-color: rgb(78, 78, 78);
+    height: 20em;
+}
+
+footer .div1 li{
+    display: inline-block;
+}
+footer .div1 li:nth-child(1){
+    margin: 8em 20px;
+}
+
+footer .div1 li:nth-child(1) p{
+    font-size: 20px;
+
+}
+footer .div1 li:nth-child(1) p span{
+    font-weight: bold;
+    font-size: 35px;
+
+}
+footer .div1 li:nth-child(2){
+    float: right;
+    margin:30px 30px 0 0;
+    position: relative;
+}
+footer .div1 li:nth-child(2) h1{
+    transition: 0.5s;
+    padding: 25px 30px 25px 60px;
+    width:150px ;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 60px;
+    font-size: 20px;
+    margin: 5px 0;
+    box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.3) ;
+}
+footer .div1 li:nth-child(2) h1:active{
+    transform: scale(0.9);
+}
+footer .div1 li:nth-child(2) .h1{
+    background-color: orange;
+    position: relative;
+
+}
+
+footer .div1 li:nth-child(2) .h2{
+    background-color: rgb(38, 121, 79);
+    position: relative;
+    
+}
+
+
+footer .div1 li:nth-child(2) p{
+    margin:20px 0 20px 30px;
+}
+
+footer .div1 li:nth-child(2) img{
+    width: 40px;
+    position: absolute;
+    top: 51.5%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+footer .div1 li:nth-child(2) span{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+footer div:nth-child(2){
+    height: 3em;
+    background-color: rgb(17, 102, 141);
+
+}
+
+footer div:nth-child(3){
+    height: 12em;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+footer ul .lif{
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+
+footer ul .lif img{
+    width: 200px;
+}
+
